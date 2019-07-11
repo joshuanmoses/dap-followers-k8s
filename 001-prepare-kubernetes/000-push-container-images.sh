@@ -2,7 +2,10 @@
 
 . ../config.sh
 
+echo "==== Logging into AWS ECR Docker Registry..."
 $(aws ecr get-login --no-include-email --region us-east-1)
+
+set -x
 
 docker tag seed-fetcher:latest $SEED_FETCHER_REPO
 docker push $SEED_FETCHER_REPO

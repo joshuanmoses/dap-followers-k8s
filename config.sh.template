@@ -1,5 +1,3 @@
-set -x
-
 DAP_ACCT="demo"
 DAP_USER="admin"
 DAP_PASS=""

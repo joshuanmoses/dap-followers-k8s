@@ -2,6 +2,8 @@
 
 . ../config.sh
 
+set -x
+
 eksctl create cluster \
   --name $EKS_CLUSTER_NAME \
   --version $EKS_CLUSTER_VERSION \

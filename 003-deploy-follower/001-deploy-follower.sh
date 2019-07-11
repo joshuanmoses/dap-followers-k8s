@@ -2,12 +2,16 @@
 
 . ../config.sh
 
+set -x
+
 kubectl create -f conjur-follower.yml
 
 echo "==== Deployments ===="
 kubectl get deployments
 echo "==== Pods ===="
 kubectl get pods
+
+set +x
 
 printf "\n====== Deployment of Followers into Kubernetes Complete ====="
 printf "\n============================================================="

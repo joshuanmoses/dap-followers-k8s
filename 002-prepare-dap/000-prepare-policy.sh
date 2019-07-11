@@ -2,6 +2,8 @@
 
 . ../config.sh
 
+set -x 
+
 cat "../templates/dap_policy/root.yml.template" | \
   sed -e "s#{{ K8S_FOLLOWER_NS }}#$K8S_FOLLOWER_NS#g"  | \
   sed -e "s#{{ K8S_FOLLOWER_SVC_ACCT }}#$K8S_FOLLOWER_SVC_ACCT#g"  | \

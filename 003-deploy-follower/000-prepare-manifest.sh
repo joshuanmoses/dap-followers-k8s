@@ -2,6 +2,8 @@
 
 . ../config.sh
 
+set -x 
+
 cat "../templates/manifests/conjur-follower.yml.template" | \
 sed -e "s#{{ K8S_FOLLOWER_REPLICA_COUNT }}#$K8S_FOLLOWER_REPLICA_COUNT#g" | \
 sed -e "s#{{ K8S_FOLLOWER_APP_LABEL }}#$K8S_FOLLOWER_APP_LABEL#g" | \

@@ -2,6 +2,8 @@
 
 . ../config.sh
 
+set -x
+
 sed -e "s#{{ K8S_FOLLOWER_NS }}#$K8S_FOLLOWER_NS#g" "../templates/manifests/conjur-role.yml.template" | \
 sed -e "s#{{ K8S_FOLLOWER_SVC_ACCT }}#$K8S_FOLLOWER_SVC_ACCT#g"  | \
 sed -e "s#{{ K8S_FOLLOWER_APP_LABEL }}#$K8S_FOLLOWER_APP_LABEL#g" \
