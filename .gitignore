@@ -1,0 +1,9 @@
+000-prerequisites/kubernetes-conjur-deploy/
+001-prepare-kubernetes/conjur-cert.pem
+001-prepare-kubernetes/conjur-role.yml
+001-prepare-kubernetes/ecr-login.txt
+002-prepare-dap/root.yml
+003-deploy-follower/conjur-follower.yml
+config.sh
+conjur-appliance_10.10.tar.gz
+k8s_values.json
