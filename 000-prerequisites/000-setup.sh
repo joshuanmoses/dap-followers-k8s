@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+set -x 
 echo "==== Install jq, docker, git ===="
 sudo yum update -y
 sudo yum install -y jq docker git
@@ -29,4 +30,5 @@ sudo systemctl enable docker
 echo "==== Configure AWS CLI ===="
 aws configure
 
+set +x
 printf "\n===== Prerequisite Setup Complete - Please logout and login for changes to take affect =====\n"
