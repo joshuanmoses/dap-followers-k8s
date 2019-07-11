@@ -8,3 +8,9 @@ Scripts showing step by step deployment of DAP followers on EKS
 * Clone the repository onto the host
 * Copy config.sh.template to config.sh and update the values
 * Set into each directory in order and run the scripts
+
+# Utility Links
+
+* https://github.com/weaveworks/eksctl
+* https://kubernetes.io/docs/tasks/tools/install-kubectl/
+* https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html
