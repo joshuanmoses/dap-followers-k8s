@@ -47,6 +47,7 @@ roleRef:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: {{ K8S_FOLLOWER_NS }}
   name: {{ K8S_FOLLOWER_APP_LABEL }}
   labels:
     app: {{ K8S_FOLLOWER_APP_LABEL }}
